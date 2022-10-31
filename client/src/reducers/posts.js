@@ -1,4 +1,4 @@
-export default (posts = [], action) => {
+export default postReducer (posts = [], action) => {
   switch (action.type) {
     case "DELETE":
       return posts.filter((post) => post._id !== action.payload);
