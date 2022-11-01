@@ -12,10 +12,8 @@ const App = () =>{
     const [currentId,setCurrentId]=useState(null);
     const classes=useStyles();
     const dispatch=useDispatch();
-     console.log('dispatched',dispatch);
     useEffect(()=>{
        dispatch(getPosts());
-       console.log("i am refreshed")
     },[currentId,dispatch])
 
     return(
