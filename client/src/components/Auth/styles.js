@@ -15,7 +15,7 @@ export default makeStyles((theme) => ({
     backgroundColor: theme.palette.secondary.main,
   },
   form: {
-    // width: '100%', // Fix IE 11 issue.
+    width: '100%', // Fix IE 11 issue.
     marginTop: "24px",
   },
   submit: {
