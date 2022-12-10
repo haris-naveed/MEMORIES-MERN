@@ -56,13 +56,7 @@ const SignUp = () => {
       // console.log(isSignUp)
   };
 
-  // const googleSuccess=async(res)=>{
-  //       console.log(res)
-  // };
-
-  // const googleError=(error)=>{
-  //     console.log("Google SIgn In was unsuccessfull.Try Again later",error);
-  // };
+  
   return (
     <Container component="main" maxWidth="xs">
       <Paper className={classes.paper} elevation={3}>
@@ -87,37 +81,7 @@ const SignUp = () => {
             {isSignUp?"Sign Up":"Sign In"}
           </Button>
 
-          {/* <GoogleLogin
-             clientId="68787477377-3sdbh7o9dug4driq5cseho71819oi7pg.apps.googleusercontent.com"
-             render={(renderProps)=>(
-               <Button
-                 className={classes.googleButton}
-                 color="primary"
-                 fullWidth
-                 onClick={renderProps.onClick}
-                 disabled={renderProps.disabled}
-                 startIcon={<Icon/>}
-                 variant="contained"
-               >
-                Google Sign In
-               </Button>
-             )}
-             onSuccess={googleSuccess}
-             onFailure={googleFailure}
-             cookiePolicy="single_host_origin"
-          /> */}
-            {/* <GoogleLogin
-            clientId="68787477377-2enhu76ievk8nniief617qa6mbk7p9m5.apps.googleusercontent.com"
-            render={(renderProps) => (
-              <Button className={classes.googleButton} color="primary" fullWidth onClick={renderProps.onClick} disabled={renderProps.disabled} startIcon={<Icon />} variant="contained">
-                Google Sign In
-              </Button>
-            )}
-            onSuccess={googleSuccess}
-            onFailure={googleError}
-            cookiePolicy="single_host_origin"
-            
-          /> */}
+         
           <Grid container justifyContent="flex-end">
             <Grid item>
                 <Button onClick={switchMode}>

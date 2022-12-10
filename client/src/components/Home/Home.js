@@ -14,7 +14,7 @@ export const Home = () => {
     },[currentId,dispatch])
   return (
     <Grow in>
-      <Container>
+      <Container maxWidth='xl'>
         <Grid
           container
           justifyContent="space-between"
